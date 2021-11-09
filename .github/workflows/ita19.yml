@@ -3,7 +3,7 @@ name: ITA19-Pipeline
 # Siia panna kuna Workflow peaks jookma
 on:[push,pull_request]
  branches:
- -master
+ -main
  -development
 jobs:
   test:
