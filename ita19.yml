@@ -1,5 +1,18 @@
 # Workflow nimi
 name: ITA19-Pipeline
 # Siia panna kuna Workflow peaks jookma
-
+on:
+ push:
+ pull_request
+ branches:
+ -master
+ -development
+jobs:
+  test:
+   name: ITA19-Pipeline
+   run-on: ubuntu-latest
+ steps:
+  - uses: actions/checkout@v2
+         name: Install Dependencies
+         run: npm -install --frozen.lockfile
 # Erinevad tööd siia plokki
