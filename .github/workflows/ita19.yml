@@ -1,10 +1,10 @@
 # Workflow nimi
 name: ITA19-Pipeline
 # Siia panna kuna Workflow peaks jookma
-on:[push,pull_request]
+on: [push,pull_request]
  branches:
- -main
- -development
+  -main
+  -development
 jobs:
   test:
    name: ITA19-Pipeline
